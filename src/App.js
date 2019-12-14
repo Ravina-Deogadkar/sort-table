@@ -1,25 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Table from './table';
+import tableData from './tabledata';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className='text-center'>
+		<h4>A list of top 10 richest billionaires.</h4>
+		<p>
+			Click on the icon next to "Net Worth" to see the sorting functionality
+		</p>
+
+		<Table data={tableData} />
+	</div>
   );
 }
 
